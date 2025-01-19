@@ -1,8 +1,15 @@
-import React from 'react'
+import { getAllBooks } from "../lib/fack-data"
+import BookList from "./ui/books/BookList"
+
 
 const home = () => {
+  const books=getAllBooks();
+  console.log(books);
+  
   return (
-    <div>home</div>
+    <div>
+     <BookList books={books}/>
+    </div>
   )
 }
 
