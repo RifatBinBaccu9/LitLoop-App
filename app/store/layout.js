@@ -1,10 +1,10 @@
-import Sitebar from "./ui/sitebar/Sitebar"
+import Sidebar from "../ui/sitebar/Sitebar"
 
 
 const detailsLayout = ({children}) => {
   return (
     <div className="md:flex">
-        <Sitebar />
+       <Sidebar />
         <main>
            {children}
         </main>

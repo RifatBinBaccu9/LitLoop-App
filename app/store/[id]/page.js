@@ -1,10 +1,12 @@
 
 
-const bookDetailsPage = ({params}) => {
-    console.log(params.id);
-    
+
+
+const bookDetailsPage = () => {
+   
   return (
-    <div>bookDetailsPage: {params.id}</div>
+    <div>bookDetailsPage:</div>
+
   )
 }
 

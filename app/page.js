@@ -20,7 +20,7 @@ export default function Home() {
   <p className="">LitLoop</p>
   </div>
   <div className="text-center p-3">
-    <Link href={'/store/'}
+    <Link href={'/store'}
     className="bg-purple-700 text-white hover:bg-purple-900 hover:text-green-500 text-lg p-2 rounded-lg">TAKE ME TO THE STORE</Link>
   </div>
 </div>
