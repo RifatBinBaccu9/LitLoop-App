@@ -1,5 +1,5 @@
 import Sidebar from "../ui/sitebar/Sitebar"
-
+import { ToastContainer } from 'react-toastify';
 
 const detailsLayout = ({children}) => {
   return (
@@ -7,6 +7,7 @@ const detailsLayout = ({children}) => {
        <Sidebar />
         <main>
            {children}
+           <ToastContainer />
         </main>
         
     </div>
