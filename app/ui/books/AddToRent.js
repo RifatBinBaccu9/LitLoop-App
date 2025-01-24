@@ -1,12 +1,16 @@
 "use client"
 
+import { StoreContext } from "@/app/context";
+import { useContext } from "react";
 import { toast } from "react-toastify";
 
 const AddToRent = ({book}) => {
+  const {cardData, setCartData}= useContext(StoreContext)
   const handelClick= (event, res) =>{
    event.preventDefault();
    console.log(book);
-   const newData = {...book, typr: res};
+   const newData = {...book, type: res};
+   setCartData([...cardData, newData]);
    toast.success(`Add to ${newData.title} card`);
   }
   return (
